@@ -1,0 +1,21 @@
+emp_id,full_name,gender,email,phone,department,designation,work_location,joining_date,employment_status,shift_timing,monthly_gross_salary_inr,annual_leave_balance,sick_leave_balance,attendance_rate,reporting_manager
+EX-101,Aarav Sharma,Male,aarav.sharma@exim2d.in,+91 98201 12345,Export & Logistics,Senior Port Logistics Manager,JNPT Port Mumbai,2022-03-15,Active,08:00 - 17:00,125000,14,8,96.5%,Rajesh Malhotra
+EX-102,Priya Patel,Female,priya.patel@exim2d.in,+91 98791 23456,Global Trade & Customs,Customs Clearance Specialist,Mundra Port Gujarat,2021-07-10,Active,09:00 - 18:00,98000,12,6,98.2%,Vikramaditya Rao
+EX-103,Amitabh Verma,Male,amitabh.verma@exim2d.in,+91 99102 34567,Civil Infrastructure,Lead Civil Site Engineer,Delhi Expressway Site,2020-01-20,Active,07:30 - 16:30,145000,10,7,94.8%,Sunil Kashyap
+EX-104,Neha Gupta,Female,neha.gupta@exim2d.in,+91 98113 45678,Human Resources,Talent Acquisition Lead,Corporate HQ Delhi,2023-02-01,Active,09:30 - 18:30,85000,16,10,99.1%,Meenakshi Saxena
+EX-105,Vikramaditya Rao,Male,vikram.rao@exim2d.in,+91 94440 56789,Export & Logistics,Head of Marine Freight Operations,Chennai Port Hub,2019-11-05,Active,08:30 - 17:30,175000,18,12,97.4%,Board of Directors
+EX-106,Ananya Sen,Female,ananya.sen@exim2d.in,+91 98300 67890,Finance & Accounts,Senior Payroll Auditor,Kolkata Logistics Hub,2022-09-18,Active,09:30 - 18:30,92000,15,9,98.0%,Kishore Banerjee
+EX-107,Rohan Joshi,Male,rohan.joshi@exim2d.in,+91 98220 78901,IT & Systems,ERP Full-Stack Analyst,Bengaluru Tech Hub,2023-06-12,Active,10:00 - 19:00,110000,14,8,95.6%,Naveen Murthy
+EX-108,Sneha Iyer,Female,sneha.iyer@exim2d.in,+91 94480 89012,Civil Infrastructure,Structural Safety Inspector,Kochi Maritime Terminal,2022-11-25,Active,08:00 - 17:00,88000,11,6,96.0%,Amitabh Verma
+EX-109,Rajesh Malhotra,Male,rajesh.m@exim2d.in,+91 98100 90123,Operations Management,VP - Global Supply Chain,Corporate HQ Delhi,2018-05-14,Active,09:00 - 18:00,240000,20,15,98.5%,Executive Committee
+EX-110,Pooja Mishra,Female,pooja.mishra@exim2d.in,+91 97230 01234,Global Trade & Customs,Import Documentation Officer,Pipavav Port Gujarat,2024-01-15,Probation,09:00 - 18:00,62000,8,4,92.0%,Priya Patel
+EX-111,Manoj Nair,Male,manoj.nair@exim2d.in,+91 98470 12345,Export & Logistics,Container Fleet Supervisor,Vallarpadam Terminal Kochi,2021-08-22,Active,08:00 - 17:00,78000,13,8,97.1%,Aarav Sharma
+EX-112,Divya Deshmukh,Female,divya.d@exim2d.in,+91 98231 23456,Finance & Accounts,Statutory Tax Specialist,Mumbai Financial Office,2022-04-10,Active,09:30 - 18:30,95000,14,9,99.0%,Ananya Sen
+EX-113,Suresh Choudhary,Male,suresh.c@exim2d.in,+91 94140 34567,Civil Infrastructure,Heavy Machinery Supervisor,Jaipur Bypass Project,2021-12-01,Active,07:00 - 16:00,72000,9,5,91.5%,Amitabh Verma
+EX-114,Kavita Singhania,Female,kavita.s@exim2d.in,+91 98190 45678,Global Trade & Customs,Tariff & Compliance Officer,Corporate HQ Delhi,2023-08-01,Active,09:00 - 18:00,88000,15,10,96.8%,Vikramaditya Rao
+EX-115,Harish Reddy,Male,harish.r@exim2d.in,+91 98490 56789,Export & Logistics,Cargo Freight Coordinator,Visakhapatnam Port,2022-02-18,Active,08:30 - 17:30,82000,12,7,94.5%,Aarav Sharma
+EX-116,Ritu Mehra,Female,ritu.mehra@exim2d.in,+91 98111 67890,Human Resources,Employee Relations Specialist,Corporate HQ Delhi,2023-10-05,Active,09:30 - 18:30,68000,14,8,98.0%,Neha Gupta
+EX-117,Deepak Chauhan,Male,deepak.c@exim2d.in,+91 97170 78901,IT & Systems,Cloud Infrastructure Engineer,Bengaluru Tech Hub,2022-07-15,Active,10:00 - 19:00,105000,15,7,97.5%,Rohan Joshi
+EX-118,Shalini Nambiar,Female,shalini.n@exim2d.in,+91 94460 89012,Finance & Accounts,Treasury & Accounts Officer,Kochi Maritime Terminal,2023-03-20,Active,09:00 - 18:00,75000,13,6,98.2%,Ananya Sen
+EX-119,Kunal Goswami,Male,kunal.g@exim2d.in,+91 98310 90123,Export & Logistics,Port Terminal Dispatcher,Haldia Port Kolkata,2024-02-10,Probation,08:00 - 17:00,58000,7,4,89.5%,Aarav Sharma
+EX-120,Meenakshi Saxena,Female,meenakshi.s@exim2d.in,+91 98101 01234,Human Resources,Chief People Officer,Corporate HQ Delhi,2017-09-01,Active,09:00 - 18:00,260000,22,14,99.5%,Board of Directors
