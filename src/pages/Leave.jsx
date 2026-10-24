@@ -4,9 +4,9 @@ import { FiCalendar, FiPlus, FiCheck, FiX } from 'react-icons/fi';
 
 const Leave = () => {
   const [requests, setRequests] = useState([
-    { id: 1, name: 'John Doe', type: 'Annual Leave', duration: '3 Days (Aug 2 - Aug 5)', dept: 'Export Logistics', reason: 'Family vacation travel abroad', status: 'Pending' },
-    { id: 2, name: 'Aisha Patel', type: 'Sick Leave', duration: '1 Day (Aug 1)', dept: 'IT Operations', reason: 'Medical checkup consultation', status: 'Pending' },
-    { id: 3, name: 'David Chen', type: 'Casual Leave', duration: '2 Days (Jul 25 - Jul 27)', dept: 'Global Sales', reason: 'Personal affairs', status: 'Approved' },
+    { id: 1, name: 'Aarav Sharma', type: 'Annual Leave', duration: '3 Days (Aug 2 - Aug 5)', dept: 'Export Logistics', reason: 'Family vacation travel', status: 'Pending' },
+    { id: 2, name: 'Priya Patel', type: 'Sick Leave', duration: '1 Day (Aug 1)', dept: 'Global Trade', reason: 'Medical consultation', status: 'Pending' },
+    { id: 3, name: 'Amitabh Verma', type: 'Casual Leave', duration: '2 Days (Jul 25 - Jul 27)', dept: 'Civil Infrastructure', reason: 'Personal affairs', status: 'Approved' },
   ]);
 
   const [toast, setToast] = useState('');

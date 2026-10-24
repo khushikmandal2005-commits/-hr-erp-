@@ -58,10 +58,10 @@ const EmployeeDashboard = () => {
             Employee Self-Service Portal
           </span>
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mt-2">
-            Welcome, <span className="text-[#14B8A6]">Sophia Martinez</span> 👋
+            Welcome, <span className="text-[#14B8A6]">Aarav Sharma</span> 👋
           </h1>
           <p className="text-xs sm:text-sm font-semibold text-slate-500 mt-0.5">
-            Logistics Manager | Export & Trade Division (EMP-1089)
+            Senior Port Logistics Manager | Export & Trade Division (EX-101)
           </p>
         </div>
 

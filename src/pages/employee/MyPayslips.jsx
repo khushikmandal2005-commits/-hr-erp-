@@ -6,10 +6,10 @@ const MyPayslips = () => {
   const [toastMsg, setToastMsg] = useState('');
 
   const [payslips] = useState([
-    { month: 'July 2026', basic: '$4,200', allowances: '$850', deductions: '$450', netPay: '$4,600.00', date: 'Jul 30, 2026', status: 'Paid' },
-    { month: 'June 2026', basic: '$4,200', allowances: '$850', deductions: '$450', netPay: '$4,600.00', date: 'Jun 30, 2026', status: 'Paid' },
-    { month: 'May 2026', basic: '$4,200', allowances: '$850', deductions: '$450', netPay: '$4,600.00', date: 'May 30, 2026', status: 'Paid' },
-    { month: 'April 2026', basic: '$4,000', allowances: '$800', deductions: '$400', netPay: '$4,400.00', date: 'Apr 30, 2026', status: 'Paid' },
+    { month: 'July 2026', basic: '₹95,000', allowances: '₹30,000', deductions: '₹12,000', netPay: '₹1,13,000.00', date: 'Jul 30, 2026', status: 'Paid' },
+    { month: 'June 2026', basic: '₹95,000', allowances: '₹30,000', deductions: '₹12,000', netPay: '₹1,13,000.00', date: 'Jun 30, 2026', status: 'Paid' },
+    { month: 'May 2026', basic: '₹95,000', allowances: '₹30,000', deductions: '₹12,000', netPay: '₹1,13,000.00', date: 'May 30, 2026', status: 'Paid' },
+    { month: 'April 2026', basic: '₹90,000', allowances: '₹28,000', deductions: '₹11,000', netPay: '₹1,07,000.00', date: 'Apr 30, 2026', status: 'Paid' },
   ]);
 
   const triggerToast = (month) => {

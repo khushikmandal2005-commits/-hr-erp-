@@ -5,7 +5,8 @@ import { FiMessageSquare, FiX, FiSend, FiCpu, FiUser, FiZap, FiArrowRight } from
 
 const AiAssistantModal = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
+  const isAiQueryOpen = typeof window !== 'undefined' && window.location.search.includes('ai=open');
+  const [isOpen, setIsOpen] = useState(isAiQueryOpen);
   const [inputMsg, setInputMsg] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const chatEndRef = useRef(null);
@@ -19,6 +20,17 @@ const AiAssistantModal = () => {
       text: `Hello! I am EXIM-AI Intelligence, your dedicated GenAI Assistant for EXIM 2D World Traders. How can I assist you with HR operations, civil sites, or logistics today?`,
       action: null,
     },
+    ...(isAiQueryOpen ? [
+      {
+        sender: 'user',
+        text: 'What is the current workforce leave status and pending approvals?',
+      },
+      {
+        sender: 'bot',
+        text: '🌴 Workforce Leave Analytics Overview:\n• 5 Active Annual Leave requests pending HR approval\n• 1 Sick Leave request for Aisha Patel\n• Total workforce leave rate: 3.5% across global hubs',
+        action: { label: 'Manage Pending Leaves', path: '/leave' },
+      }
+    ] : [])
   ]);
 
   useEffect(() => {
@@ -35,15 +47,15 @@ const AiAssistantModal = () => {
         botText = "🌴 Your Leave Balance Summary:\n• Annual Vacation: 14 Days remaining\n• Medical Sick Leave: 9 Days remaining\n• Casual Leave: 4 Days remaining";
         botAction = { label: 'Apply For Leave Now', path: '/employee/leave' };
       } else {
-        botText = "🌴 HR Leave Management Overview:\n• 5 Active Annual Leave requests pending HR approval\n• 1 Sick Leave request for Aisha Patel\n• Total workforce leave rate: 3.5%";
+        botText = "🌴 HR Leave Management Overview:\n• 5 Active Annual Leave requests pending HR approval\n• 1 Sick Leave request for Priya Patel\n• Total workforce leave rate: 3.5% across Indian terminals";
         botAction = { label: 'Manage Pending Leaves', path: '/leave' };
       }
     } else if (lower.includes('payslip') || lower.includes('salary') || lower.includes('pay') || lower.includes('wages')) {
       if (isEmployee) {
-        botText = "💵 July 2026 Payslip Summary:\n• Basic Salary: $4,200.00\n• Allowances: +$850.00\n• Deductions: -$450.00\n• Net Take-Home: $4,600.00 (Paid via Direct Deposit)";
+        botText = "💵 July 2026 Payslip Summary:\n• Basic Salary: ₹95,000.00\n• Allowances: +₹30,000.00\n• Deductions: -₹12,000.00\n• Net Take-Home: ₹1,13,000.00 (Paid via Direct Bank Transfer)";
         botAction = { label: 'Download July Payslip PDF', path: '/employee/payslips' };
       } else {
-        botText = "💵 EXIM 2D Monthly Payroll Summary:\n• Total Monthly Outflow: $248,500.00\n• Total Personnel: 142 Staff Members\n• Statutory Tax Compliance: 100% Verified";
+        botText = "💵 EXIM 2D Monthly Payroll Summary:\n• Total Monthly Outflow: ₹2,07,49,750 (142 Personnel)\n• Multi-Currency Options Available\n• Statutory EPF/ESI Tax Compliance: 100% Verified";
         botAction = { label: 'Open Payroll Portal', path: '/payroll' };
       }
     } else if (lower.includes('attendance') || lower.includes('clock') || lower.includes('shift') || lower.includes('present')) {
@@ -51,14 +63,14 @@ const AiAssistantModal = () => {
         botText = "⏱️ Your Attendance Status:\n• Shift Status: On Duty / Clocked In\n• Punctuality: 98.2% On-Time Record\n• Total Logged Hours: 168.4 Hours (July Billing Period)";
         botAction = { label: 'View Attendance History', path: '/employee/attendance' };
       } else {
-        botText = "⏱️ Workforce Attendance Overview:\n• On Duty Today: 128 Staff (90.1% Present Rate)\n• Late Check-Ins: 8 Staff\n• Unexcused Absences: 3 Site Workers";
+        botText = "⏱️ Workforce Attendance Overview:\n• On Duty Today: 128 Staff (90.1% Present Rate)\n• Late Check-Ins: 8 Staff\n• Unexcused Absences: 3 Site Workers across JNPT & Mundra";
         botAction = { label: 'Open Attendance Sheet', path: '/attendance' };
       }
     } else if (lower.includes('onboard') || lower.includes('add employee') || lower.includes('new staff') || lower.includes('hire')) {
       botText = "👤 Staff Onboarding:\nClick below to open the New Employee Onboarding Modal and add a new civil engineer or customs officer to the directory.";
       botAction = { label: 'Onboard New Employee', path: '/employees' };
-    } else if (lower.includes('ship') || lower.includes('cargo') || lower.includes('port') || lower.includes('rotterdam') || lower.includes('singapore')) {
-      botText = "🚢 Global Port & Logistics Radar:\n• Rotterdam Port: 12 Container Ships Docked (EXIM-992 Customs Cleared)\n• Singapore Hub: 99.4% Customs Clearance Efficiency\n• NY Freight: All Hub Clearances Active";
+    } else if (lower.includes('ship') || lower.includes('cargo') || lower.includes('port') || lower.includes('mumbai') || lower.includes('mundra') || lower.includes('rotterdam')) {
+      botText = "🚢 Maritime Hub & Port Logistics Radar:\n• JNPT Port Mumbai: 14 Cargo Ships Docked (Customs Cleared)\n• Mundra Port Gujarat: 99.6% Customs Clearance Efficiency\n• Delhi Expressway Project: 52 Active Crew Members Logged In";
       botAction = { label: 'View Divisions & Hubs', path: '/departments' };
     } else if (lower.includes('department') || lower.includes('division') || lower.includes('budget')) {
       botText = "🏢 Division & Budget Allocation:\n• Total Organizational Units: 6 Engineering & Logistics Divisions\n• Combined Annual Budget: $7.8 Million\n• Largest Division: Civil Engineering (48 Members)";

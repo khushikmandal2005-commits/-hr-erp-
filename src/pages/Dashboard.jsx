@@ -56,10 +56,10 @@ const Dashboard = () => {
 
   // EXCLUSIVITY FEATURE 1: Global Site Hub Radar
   const globalHubs = [
-    { name: 'Rotterdam Port Hub', location: 'Netherlands', weather: '18°C Sunny', status: '12 Ships Docked', icon: FiSun, color: 'text-amber-500' },
-    { name: 'Singapore Logistics Hub', location: 'Singapore', weather: '31°C Tropical', status: '99.4% Customs Rate', icon: FiGlobe, color: 'text-[#14B8A6]' },
-    { name: 'New York HQ', location: 'USA', weather: '24°C Clear', status: 'Executive Operations', icon: FiSun, color: 'text-[#2563EB]' },
-    { name: 'Expressway Project Alpha', location: 'Civil Site', weather: '28°C Active Site', status: '48 Crew Checked In', icon: FiShield, color: 'text-purple-600' },
+    { name: 'JNPT Port Mumbai', location: 'Maharashtra, India', weather: '29°C Coastal', status: '14 Cargo Ships Docked', icon: FiSun, color: 'text-amber-500' },
+    { name: 'Mundra Port Hub', location: 'Gujarat, India', weather: '32°C Sunny', status: '99.6% Customs Rate', icon: FiGlobe, color: 'text-[#14B8A6]' },
+    { name: 'Corporate HQ Delhi', location: 'New Delhi, India', weather: '26°C Clear', status: 'Central Operations Active', icon: FiSun, color: 'text-[#2563EB]' },
+    { name: 'Delhi Expressway Site', location: 'Civil Infrastructure', weather: '30°C Active Site', status: '52 Crew Checked In', icon: FiShield, color: 'text-purple-600' },
   ];
 
   // 1. KPI Cards tailored to EXIM 2D World Traders
@@ -100,9 +100,9 @@ const Dashboard = () => {
   ];
 
   const [leaveRequests, setLeaveRequests] = useState([
-    { id: 1, name: 'John Doe', type: 'Annual Leave', dates: 'Aug 2 - Aug 5', reason: 'Site rotation vacation', status: 'Pending' },
-    { id: 2, name: 'Aisha Patel', type: 'Sick Leave', dates: 'Aug 1', reason: 'Medical consultation', status: 'Pending' },
-    { id: 3, name: 'Liam O’Connor', type: 'Casual Leave', dates: 'Aug 10 - Aug 12', reason: 'Personal affairs', status: 'Pending' },
+    { id: 1, name: 'Aarav Sharma', type: 'Annual Leave', dates: 'Aug 2 - Aug 5', reason: 'Family vacation travel', status: 'Pending' },
+    { id: 2, name: 'Priya Patel', type: 'Sick Leave', dates: 'Aug 1', reason: 'Medical consultation', status: 'Pending' },
+    { id: 3, name: 'Amitabh Verma', type: 'Casual Leave', dates: 'Aug 10 - Aug 12', reason: 'Personal affairs', status: 'Pending' },
   ]);
 
   const handleLeaveAction = (id, newStatus) => {
