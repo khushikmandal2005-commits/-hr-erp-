@@ -6,11 +6,11 @@ const CompanyDirectory = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const colleagues = [
-    { name: 'Alex Morgan', role: 'Chief HR Admin', dept: 'Human Resources', location: 'New York HQ', email: 'alex.morgan@exim2d.com', phone: '+1 555-0199', avatar: 'AM', color: 'from-[#2563EB] to-blue-700' },
-    { name: 'David Chen', role: 'Senior Civil Site Engineer', dept: 'Civil Engineering', location: 'Singapore Hub', email: 'david.chen@exim2d.com', phone: '+1 555-0183', avatar: 'DC', color: 'from-[#14B8A6] to-teal-600' },
-    { name: 'Elena Rostova', role: 'Safety Compliance Officer', dept: 'Human Resources', location: 'London, UK', email: 'elena.r@exim2d.com', phone: '+1 555-0174', avatar: 'ER', color: 'from-purple-600 to-indigo-600' },
-    { name: 'Marcus Vance', role: 'Equipment Fleet Accountant', dept: 'Finance & Procurement', location: 'Dubai, UAE', email: 'marcus.v@exim2d.com', phone: '+1 555-0165', avatar: 'MV', color: 'from-amber-500 to-orange-600' },
-    { name: 'Aisha Patel', role: 'ERP System Analyst', dept: 'IT Operations', location: 'Mumbai, IN', email: 'aisha.p@exim2d.com', phone: '+1 555-0156', avatar: 'AP', color: 'from-[#14B8A6] to-emerald-600' },
+    { name: 'Aarav Sharma', role: 'Senior Port Logistics Manager', dept: 'Export & Logistics', location: 'JNPT Port Mumbai', email: 'aarav.sharma@exim2d.in', phone: '+91 98201 12345', avatar: 'AS', color: 'from-[#2563EB] to-blue-700' },
+    { name: 'Priya Patel', role: 'Customs Clearance Specialist', dept: 'Global Trade & Customs', location: 'Mundra Port Gujarat', email: 'priya.patel@exim2d.in', phone: '+91 98791 23456', avatar: 'PP', color: 'from-[#14B8A6] to-teal-600' },
+    { name: 'Amitabh Verma', role: 'Lead Civil Site Engineer', dept: 'Civil Infrastructure', location: 'Delhi Expressway Site', email: 'amitabh.verma@exim2d.in', phone: '+91 99102 34567', avatar: 'AV', color: 'from-purple-600 to-indigo-600' },
+    { name: 'Neha Gupta', role: 'Talent Acquisition Lead', dept: 'Human Resources', location: 'Corporate HQ Delhi', email: 'neha.gupta@exim2d.in', phone: '+91 98113 45678', avatar: 'NG', color: 'from-amber-500 to-orange-600' },
+    { name: 'Rohan Joshi', role: 'ERP Full-Stack Analyst', dept: 'IT & Systems', location: 'Bengaluru Tech Hub', email: 'rohan.joshi@exim2d.in', phone: '+91 98220 78901', avatar: 'RJ', color: 'from-[#14B8A6] to-emerald-600' },
   ];
 
   const filtered = colleagues.filter(c =>

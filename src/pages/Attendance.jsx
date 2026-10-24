@@ -8,11 +8,12 @@ const Attendance = () => {
   const [staffName, setStaffName] = useState('');
 
   const [attendanceLogs, setAttendanceLogs] = useState([
-    { name: 'Sophia Martinez', id: 'EX-101', dept: 'Export Logistics', timeIn: '08:52 AM', timeOut: '06:00 PM', status: 'On Time', hours: '8.5 hrs' },
-    { name: 'David Chen', id: 'EX-102', dept: 'Global Sales', timeIn: '09:05 AM', timeOut: '06:15 PM', status: 'Late', hours: '8.2 hrs' },
-    { name: 'Marcus Vance', id: 'EX-104', dept: 'Finance & Accounts', timeIn: '08:45 AM', timeOut: '05:55 PM', status: 'On Time', hours: '8.5 hrs' },
-    { name: 'Aisha Patel', id: 'EX-105', dept: 'IT Operations', timeIn: '08:58 AM', timeOut: '06:02 PM', status: 'On Time', hours: '8.4 hrs' },
-    { name: 'Liam O’Connor', id: 'EX-106', dept: 'Export Logistics', timeIn: '09:22 AM', timeOut: 'In Progress', status: 'Late', hours: '7.1 hrs' },
+    { name: 'Aarav Sharma', id: 'EX-101', dept: 'Export Logistics', timeIn: '08:52 AM', timeOut: '06:00 PM', status: 'On Time', hours: '8.5 hrs' },
+    { name: 'Priya Patel', id: 'EX-102', dept: 'Global Trade', timeIn: '09:05 AM', timeOut: '06:15 PM', status: 'Late', hours: '8.2 hrs' },
+    { name: 'Amitabh Verma', id: 'EX-103', dept: 'Civil Infrastructure', timeIn: '07:45 AM', timeOut: '05:00 PM', status: 'On Time', hours: '9.0 hrs' },
+    { name: 'Neha Gupta', id: 'EX-104', dept: 'Human Resources', timeIn: '09:28 AM', timeOut: '06:30 PM', status: 'On Time', hours: '8.4 hrs' },
+    { name: 'Vikramaditya Rao', id: 'EX-105', dept: 'Export Logistics', timeIn: '08:40 AM', timeOut: '05:55 PM', status: 'On Time', hours: '8.6 hrs' },
+    { name: 'Rohan Joshi', id: 'EX-107', dept: 'IT Operations', timeIn: '09:55 AM', timeOut: 'In Progress', status: 'Late', hours: '7.1 hrs' },
   ]);
 
   const triggerToast = (msg) => {

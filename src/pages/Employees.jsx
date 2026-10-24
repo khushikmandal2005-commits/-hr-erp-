@@ -25,12 +25,14 @@ const Employees = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
   const [employeeList, setEmployeeList] = useState([
-    { id: 'EX-101', name: 'Sophia Martinez', role: 'Logistics Manager', dept: 'Export & Logistics', status: 'Active', location: 'New York, USA', email: 'sophia.m@exim2d.com', phone: '+1 555-0192', color: 'from-[#2563EB] to-blue-700' },
-    { id: 'EX-102', name: 'David Chen', role: 'Trade Specialist', dept: 'Global Sales', status: 'Active', location: 'Singapore Hub', email: 'david.chen@exim2d.com', phone: '+1 555-0183', color: 'from-[#14B8A6] to-teal-600' },
-    { id: 'EX-103', name: 'Elena Rostova', role: 'Talent Acquisition', dept: 'Human Resources', status: 'On Leave', location: 'London, UK', email: 'elena.r@exim2d.com', phone: '+1 555-0174', color: 'from-purple-600 to-indigo-600' },
-    { id: 'EX-104', name: 'Marcus Vance', role: 'Senior Accountant', dept: 'Finance & Accounts', status: 'Active', location: 'Dubai, UAE', email: 'marcus.v@exim2d.com', phone: '+1 555-0165', color: 'from-amber-500 to-orange-600' },
-    { id: 'EX-105', name: 'Aisha Patel', role: 'ERP System Analyst', dept: 'IT & Operations', status: 'Active', location: 'Mumbai, IN', email: 'aisha.p@exim2d.com', phone: '+1 555-0156', color: 'from-[#14B8A6] to-emerald-600' },
-    { id: 'EX-106', name: 'Liam O’Connor', role: 'Customs Clearance Specialist', dept: 'Export & Logistics', status: 'Probation', location: 'Rotterdam, NL', email: 'liam.oc@exim2d.com', phone: '+1 555-0147', color: 'from-rose-600 to-pink-600' },
+    { id: 'EX-101', name: 'Aarav Sharma', role: 'Senior Logistics Manager', dept: 'Export & Logistics', status: 'Active', location: 'JNPT Port Mumbai', email: 'aarav.sharma@exim2d.in', phone: '+91 98201 12345', color: 'from-[#2563EB] to-blue-700' },
+    { id: 'EX-102', name: 'Priya Patel', role: 'Customs Clearance Specialist', dept: 'Global Sales', status: 'Active', location: 'Mundra Port Gujarat', email: 'priya.patel@exim2d.in', phone: '+91 98791 23456', color: 'from-[#14B8A6] to-teal-600' },
+    { id: 'EX-103', name: 'Amitabh Verma', role: 'Lead Civil Site Engineer', dept: 'Civil Infrastructure', status: 'Active', location: 'Delhi Expressway Site', email: 'amitabh.verma@exim2d.in', phone: '+91 99102 34567', color: 'from-purple-600 to-indigo-600' },
+    { id: 'EX-104', name: 'Neha Gupta', role: 'Talent Acquisition Lead', dept: 'Human Resources', status: 'Active', location: 'Corporate HQ Delhi', email: 'neha.gupta@exim2d.in', phone: '+91 98113 45678', color: 'from-amber-500 to-orange-600' },
+    { id: 'EX-105', name: 'Vikramaditya Rao', role: 'Marine Freight Lead', dept: 'Export & Logistics', status: 'Active', location: 'Chennai Port Hub', email: 'vikram.rao@exim2d.in', phone: '+91 94440 56789', color: 'from-[#14B8A6] to-emerald-600' },
+    { id: 'EX-106', name: 'Ananya Sen', role: 'Senior Payroll Auditor', dept: 'Finance & Accounts', status: 'On Leave', location: 'Kolkata Logistics Hub', email: 'ananya.sen@exim2d.in', phone: '+91 98300 67890', color: 'from-rose-600 to-pink-600' },
+    { id: 'EX-107', name: 'Rohan Joshi', role: 'ERP Full-Stack Analyst', dept: 'IT & Operations', status: 'Active', location: 'Bengaluru Tech Hub', email: 'rohan.joshi@exim2d.in', phone: '+91 98220 78901', color: 'from-[#2563EB] to-cyan-600' },
+    { id: 'EX-108', name: 'Sneha Iyer', role: 'Structural Safety Inspector', dept: 'Civil Infrastructure', status: 'Probation', location: 'Kochi Terminal', email: 'sneha.iyer@exim2d.in', phone: '+91 94480 89012', color: 'from-teal-600 to-emerald-600' },
   ]);
 
   const [newEmpForm, setNewEmpForm] = useState({
